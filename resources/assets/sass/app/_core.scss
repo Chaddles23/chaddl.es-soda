@@ -1,3 +1,4 @@
 body{
+    width: 100%;	
 	@include gradient-radial($orange 50%, darken($orange, 15));
 }
