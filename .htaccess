@@ -7,17 +7,8 @@
 
     RewriteEngine On
 
-    # Redirect All Requests To The Subfolder
-    # RewriteRule ^ smart-home/public
-
-    # RewriteCond %{HTTP_HOST} ^(www.)?chaddl.es$
-    # RewriteRule ^(/)?$ smart-home/public [L]
-
-    # RewriteEngine On
-    # RewriteRule !^smart-home/public/ /smart-home/public%{REQUEST_URI} [L,R=301]
-
     RewriteCond %{HTTP_HOST} ^chaddl.es  
-    RewriteRule ^(.*) https://chaddl.es/smart-home/public/$1 [P]
+    RewriteRule ^(.*) https://chaddl.es/chaddl.es/public/$1 [P]
 
 </IfModule>
 

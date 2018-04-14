@@ -3,7 +3,19 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
 
 // Variables
-@import "variables";
+@import "app/colors";
+@import "app/variables";
 
 // Bootstrap
-@import "~bootstrap-sass/assets/stylesheets/bootstrap";
+@import "app/bootstrap";
+
+// App
+@import "app/animations";
+@import "app/core";
+
+// elements
+@import "elements/card";
+@import "elements/snowflakes";
+
+// pages
+@import "pages/landing"

@@ -1,0 +1,13 @@
+.snowflakes{
+	
+	.snowflake{
+
+		&__inner{
+
+			&:before{
+
+				background-image: url('/images/sophie/donut.png') !important;
+			}
+		}
+	}
+}
