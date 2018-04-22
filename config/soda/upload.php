@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'default' => 'soda-local',
+    'default' => 'soda-s3',
 
     'disks' => [
         'soda-local' => [
@@ -11,7 +11,7 @@ return [
 
         'soda-s3' => [
             'driver'     => 's3',
-            'root'       => 'uploads',
+            'root'       => 'chaddl.es/uploads',
             'key'        => env('AWS_KEY'),
             'secret'     => env('AWS_SECRET'),
             'region'     => env('AWS_REGION'),

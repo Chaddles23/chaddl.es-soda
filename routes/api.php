@@ -20,4 +20,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::prefix('v1')->group(function () {
     //Route::any('holiday-mode', 'HolidayController@isHolidayMode');
     Route::any('enabled', 'HassIOController@isEnabled');
+    Route::any('alarm', 'AlarmController@alarm');
 });
