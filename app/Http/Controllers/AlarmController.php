@@ -21,8 +21,11 @@ class AlarmController extends BaseController
 
       // get alarm for current day
       $alarm = $alarms->filter(function($alarm) use ($now){
-        $days = json_decode($alarm->day);
-        return in_array($now->dayOfWeek, $days);
+        if( $alarm->day ){
+          $days = json_decode($alarm->day);
+          return in_array($now->dayOfWeek, $days);
+        }
+        return false;
       })->shuffle()->first();
 
       // no day set, use random
